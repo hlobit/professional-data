@@ -1,0 +1,98 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[red]{classic}
+
+\usepackage[hscale=0.85, vscale=0.86]{geometry}
+\usepackage{fontspec,xltxtra,xunicode}
+%\usepackage{fontawesome}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% TODO : Ajouter un petit logo voiture à côté du permis B
+
+%----------------------------------------
+% HEADER
+%----------------------------------------
+\name{\Huge Hubert}{\Huge \textsc{Lobit}}
+\title{Software developer \newline
+\small 24 ans}
+\address{60, rue de la Madeleine}{49000 Angers\vspace{1em}}
+\phone[mobile]{06.37.38.70.57}
+\email{hubert.lobit@gmail.com}
+%\social[github]{hlobit}
+\extrainfo{Permis B}
+\photo[70pt][0pt]{img/portrait-sm}
+%----------------------------------------
+
+%---------------
+% DOCUMENT BEGIN
+%---------------
+\begin{document}
+\makecvtitle
+\vspace{-3em}
+
+%------------------
+\section{Formation}
+%------------------
+\cventry{2010-2014}{Master 2 Mathématiques et Informatique \newline Parcours Ingénierie logicielle et Aide à la décision \newline \textnormal{Institut de Mathématiques Appliquées}}
+{Université Catholique de l'Ouest (Angers)}{}{}{}
+%------------------
+\cventry{2012-2013}{Semestre d’études à l'étranger en informatique et statistiques}{Bamberg (Allemagne)}{}{}{}
+
+%--------------------
+\section{Expériences}
+%--------------------
+\cventry{\textit{Actuellement} \newline 2014}{Développeur Symfony2}{Université d'Angers}{}{9 mois (stage de 6 mois puis CDD de 3 mois)}{\begin{itemize}
+\item Conception et développement de \textbf{VRP-REP}.org, une plateforme pour le partage de données scientifiques pour les problèmes de tournées de véhicules
+\item Responsabilités de développeur, analyste, rédacteur du cahier des charges et de la specification, administrateur du site.
+\item Plateforme entièrement développée et mise en production le 20 novembre 2014.
+\item Introduction aux méthodes agiles, RESTful APIs, gestion de versions, frameworks de test.
+\end{itemize}}
+\vspace{0.3em}
+%------------------
+\cventry{2013}{Développeur C\texttt{++}}{IUT d'Angers}{}{stage de 4 mois}{\begin{itemize}
+\item Développement d'une application de dessin scientifique pour Windows, \textbf{SimPetri}, avec Visual Studio.
+\item Simulation des temps de parcours dans un réseau de Petri pour un problème de recherche en ordonnancement.
+\end{itemize}}
+\vspace{0.3em}
+%------------------
+\cventry{2012}{Projet d'analyse de données d'entreprise}{En partenariat avec Valeo Lighting Systems}{Site d'Écouflant (49)}{projet de 4 mois}{\begin{itemize}
+\item Études statistiques descriptives et prédictives avec R, sur les inducteurs de temps de projets.
+\item Élaboration d’un outil Excel et VBA prévisionnel des heures de projets.
+\end{itemize}}
+
+%--------------------
+\section{Compétences}
+%--------------------
+\subsection{Informatique}
+\cvitem{Langages}{Java, PHP, Javascript, C\texttt{++}, Ruby, R, \LaTeX}
+\cvitem{Frameworks}{Symfony2, Backbone.js, jQuery, Compass}
+\cvitem{Data}{SQL, XML \& XSD, MongoDB, Redis}
+\cvitem{Tools}{Git, Maven}
+\cvitem{IDE}{IntelliJ IDEA, Eclipse, Visual Studio, Cloud9}
+%--------------------
+\subsection{Langues}
+\cvlanguage{Anglais}{Bonne pratique technique et usuelle}{TOEFL PBT : 557, TOEIC : 865}
+\cvlanguage{Allemand}{Compétence professionnelle}{}
+
+%-------------------------------------
+\section{Informations complémentaires}
+%-------------------------------------
+\cvline{Depuis 2013}{Président et chanteur dans l'association musicale \emph{Etincelo}}
+%-------------------------------------
+\cvline{Associatif}{Animateur BAFA, participant à des projets de spectacles, comédies musicales, etc.}
+
+%-------------------
+\section{Références}
+%-------------------
+\begin{tabular}{ p{\dimexpr 0.48\linewidth-2\tabcolsep}
+                 p{\dimexpr 0.17\linewidth-2\tabcolsep}
+                 p{\dimexpr 0.35\linewidth-2\tabcolsep} }
+  \hspace{1em} Jorge \textsc{Mendoza}, \scriptsize{professeur, Polytech'Tours} & 06.73.82.12.55 & jorge.mendoza@univ-tours.fr \\
+  \hspace{1em} Christelle \textsc{Guéret}, \scriptsize{professeur, Université d’Angers} & 02.44.68.75.73 & christelle.jussien-gueret@univ-angers.fr \\
+  \hspace{1em} Jacky \textsc{Giraudeau}, \scriptsize{ingénieur Valeo} & 06.19.52.62.53 & jacky.giraudeau@valeo.com \\
+\end{tabular}
+
+\end{document}
+%-------------
+% DOCUMENT END
+%-------------
