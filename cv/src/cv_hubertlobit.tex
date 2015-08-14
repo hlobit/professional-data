@@ -3,55 +3,49 @@
 
 \usepackage[hscale=0.85, vscale=0.86]{geometry}
 \usepackage{fontspec,xltxtra,xunicode}
-%\usepackage{fontawesome}
+\usepackage{fontawesome}
 
 \renewcommand{\familydefault}{\sfdefault}
 
-% TODO : Ajouter un petit logo voiture à côté du permis B
-
-%----------------------------------------
-% HEADER
-%----------------------------------------
+%%%%%%%%%%
+% HEADER %
+%%%%%%%%%%
 \name{\Huge Hubert}{\Huge \textsc{Lobit}}
-\title{Software developer \newline
-\small 24 ans}
-\address{60, rue de la Madeleine}{49000 Angers\vspace{1em}}
-\phone[mobile]{06.37.39.70.57}
+\title{Software developer \newline \small 25 ans}
+\address{\faHome \space 27, avenue de la Bourdonnais}{75007 Paris}{\faGlobe \space Nationalité française\vspace{1em}}
+\phone[mobile]{+336.37.39.70.57}
 \email{hubert.lobit@gmail.com}
 %\social[github]{hlobit}
-\extrainfo{Permis B}
-\photo[70pt][0pt]{img/portrait-sm}
+\extrainfo{\faCar \space Permis de conduire B}
+\photo[74pt][0pt]{img/portrait-sm}
 %----------------------------------------
 
-%---------------
-% DOCUMENT BEGIN
-%---------------
+%%%%%%%%%%%%%%%%%%
+% DOCUMENT BEGIN %
+%%%%%%%%%%%%%%%%%%
 \begin{document}
 \makecvtitle
-\vspace{-3em}
-
-%------------------
-\section{Formation}
-%------------------
-\cventry{2010-2014}{Master 2 Mathématiques et Informatique \newline Parcours Ingénierie logicielle et Aide à la décision \newline \textnormal{Institut de Mathématiques Appliquées}}
-{Université Catholique de l'Ouest (Angers)}{}{}{}
-%------------------
-\cventry{2012-2013}{Semestre d’études à l'étranger en informatique et statistiques}{Bamberg (Allemagne)}{}{}{}
+\vspace{-3.5em}
 
 %--------------------
 \section{Expériences}
 %--------------------
-\cventry{\textit{Actuellement} \newline 2014}{Développeur Symfony2}{Université d'Angers}{}{9 mois (stage de 6 mois puis CDD de 3 mois)}{\begin{itemize}
-\item Conception et développement de \textbf{VRP-REP}.org, une plateforme pour le partage de données scientifiques pour les problèmes de tournées de véhicules
-\item Responsabilités de développeur, analyste, rédacteur du cahier des charges et de la specification, administrateur du site.
+\cventry{\textit{Actuellement} \newline 2015}{Développeur Ruby et Ruby On Rails}{CapSens}{}{CDD de 9 mois}{\begin{itemize}
+\item Contribution au développement de plateformes de financement participatif de différents types : en prêt, en don contre-don et coopérative.
+\item Spécifications et développement d'outils et services internes sous forme de plugins et d'APIs hypermedia en Ruby et Scala.
+\end{itemize}}
+\vspace{0.3em}
+%------------------
+\cventry{2014}{Développeur Symfony2}{Université d'Angers}{}{9 mois (stage de 6 mois puis CDD de 3 mois)}{\begin{itemize}
+\item Conception et développement de \textbf{VRP-REP}.org, une plateforme pour le partage de données scientifiques pour les problèmes de tournées de véhicules.
 \item Plateforme entièrement développée et mise en production le 20 novembre 2014.
-\item Introduction aux méthodes agiles, RESTful APIs, gestion de versions, frameworks de test.
+\item Développement d'outils internes avec Java et Maven.
 \end{itemize}}
 \vspace{0.3em}
 %------------------
 \cventry{2013}{Développeur C\texttt{++}}{IUT d'Angers}{}{stage de 4 mois}{\begin{itemize}
-\item Développement d'une application de dessin scientifique pour Windows, \textbf{SimPetri}, avec Visual Studio.
-\item Simulation des temps de parcours dans un réseau de Petri pour un problème de recherche en ordonnancement.
+\item Développement d'une petite application de dessin scientifique pour Windows, \textbf{SimPetri}.
+\item Simulation de parcours dans un réseau de Petri pour un problème de recherche en ordonnancement.
 \end{itemize}}
 \vspace{0.3em}
 %------------------
@@ -64,15 +58,22 @@
 \section{Compétences}
 %--------------------
 \subsection{Informatique}
-\cvitem{Langages}{Java, PHP, Javascript, C\texttt{++}, Ruby, R, \LaTeX}
-\cvitem{Frameworks}{Symfony2, Backbone.js, jQuery, Compass}
-\cvitem{Data}{SQL, XML \& XSD, MongoDB, Redis}
-\cvitem{Tools}{Git, Maven}
-\cvitem{IDE}{IntelliJ IDEA, Eclipse, Visual Studio, Cloud9}
+\cvitem{Langages}{Ruby, Scala, Java, PHP, Javascript, C\texttt{++}, R, \LaTeX}
+\cvitem{Frameworks}{Rails, Symfony2, jQuery, Compass}
+\cvitem{Data}{SQL, XML \& XSD \& XSLT, Redis}
+\cvitem{Tools}{Git, Maven, AWS}
 %--------------------
 \subsection{Langues}
-\cvlanguage{Anglais}{Bonne pratique technique et usuelle}{TOEFL PBT : 557, TOEIC : 865}
-\cvlanguage{Allemand}{Compétence professionnelle}{}
+\cvlanguage{Anglais}{\textbf{Bonne pratique technique et usuelle}}{TOEFL PBT : 557, TOEIC : 865}
+\cvlanguage{Allemand}{\textbf{Compétence professionnelle}}{}
+
+%------------------
+\section{Formation}
+%------------------
+\cventry{2010-2014}{Master de Mathématiques et Informatique \newline Parcours Ingénierie logicielle et Aide à la décision \newline \textnormal{Institut de Mathématiques Appliquées}}
+{Université Catholique de l'Ouest (Angers)}{}{}{}
+%------------------
+\cventry{2012-2013}{Semestre d’études à l'étranger en informatique et statistiques}{Bamberg (Allemagne)}{}{}{}
 
 %-------------------------------------
 \section{Informations complémentaires}
@@ -87,9 +88,10 @@
 \begin{tabular}{ p{\dimexpr 0.49\linewidth-2\tabcolsep}
                  p{\dimexpr 0.16\linewidth-2\tabcolsep}
                  p{\dimexpr 0.35\linewidth-2\tabcolsep} }
+  \hspace{0.7em} Nicolas \textsc{Dabbaghian}, \scriptsize{PDG de SPEAR et CapSens} & 06.14.44.02.48 & nicolas.dabbaghian@spear.fr \\
   \hspace{0.7em} Jorge \textsc{Mendoza}, \scriptsize{maître de conférences, Polytech'Tours} & 06.73.82.12.55 & jorge.mendoza@univ-tours.fr \\
-  \hspace{0.7em} Christelle \textsc{Guéret}, \scriptsize{professeur, Université d’Angers} & 02.44.68.75.73 & christelle.jussien-gueret@univ-angers.fr \\
-  \hspace{0.7em} Jacky \textsc{Giraudeau}, \scriptsize{ingénieur Valeo} & 06.19.52.62.53 & jacky.giraudeau@valeo.com \\
+  %\hspace{0.7em} Christelle \textsc{Guéret}, \scriptsize{professeur, Université d’Angers} & 02.44.68.75.73 & christelle.jussien-gueret@univ-angers.fr \\
+  %\hspace{0.7em} Jacky \textsc{Giraudeau}, \scriptsize{ingénieur Valeo} & 06.19.52.62.53 & jacky.giraudeau@valeo.com \\
 \end{tabular}
 
 \end{document}
