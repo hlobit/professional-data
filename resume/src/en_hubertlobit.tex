@@ -1,0 +1,99 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[red]{classic}
+
+\usepackage[hscale=0.85, vscale=0.86]{geometry}
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{fontawesome}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+%%%%%%%%%%
+% HEADER %
+%%%%%%%%%%
+\name{\Huge Hubert}{\Huge \textsc{Lobit}}
+\title{Software developer \newline \small 25 ans}
+\address{\faHome \space Rue Valduc, 298}{1160 Auderghem}{\faGlobe \space French nationality\vspace{1em}}
+\phone[mobile]{+336.37.39.70.57}
+\email{hubert.lobit@gmail.com}
+%\social[github]{hlobit}
+\extrainfo{\faCar \space B Driving license}
+\photo[74pt][0pt]{img/portrait-sm}
+%----------------------------------------
+
+%%%%%%%%%%%%%%%%%%
+% DOCUMENT BEGIN %
+%%%%%%%%%%%%%%%%%%
+\begin{document}
+\makecvtitle
+\vspace{-3.5em}
+
+%--------------------
+\section{Experiences}
+%--------------------
+\cventry{\textit{Currently} \newline 2015}{Ruby \& Ruby On Rails developer}{CapSens}{}{9 months (CDD)}{\begin{itemize}
+\item Contribution and development of multiple crowdfunding platforms, including loan, reward and coopérative system.
+\item Specifications and developpement of intern tooling and services (plugins and hypermedia APIs) using Ruby and Scala.
+\end{itemize}}
+\vspace{0.3em}
+%------------------
+\cventry{2014}{Symfony2 developer}{Université d'Angers}{}{9 months (stage de 6 mois puis CDD de 3 mois)}{\begin{itemize}
+\item Conception and implementation of \textbf{VRP-REP}.org, a data-based platform aiming to share XML standardized instances for the Vehicle Routing Problem.
+\item Data platform entirely developed and pushed to production on November 2014.
+\item Process automation and intern tooling with Java and Maven.
+\end{itemize}}
+\vspace{0.3em}
+%------------------
+\cventry{2013}{C\texttt{++} developer}{Université d'Angers}{}{stage de 4 mois}{\begin{itemize}
+\item Rewriting and development of a scientific drawing app for Windows, called \textbf{SimPetri}.
+\item Paths simulations in Petri Networks to solve specialized instances of a scheduling problem.
+\end{itemize}}
+\vspace{0.3em}
+%------------------
+\cventry{2012}{Business oriented data analysis project}{Partnership with Valeo Lighting Systems}{Écouflant (49)}{projet de 4 mois}{\begin{itemize}
+\item Predictive and descriptive statistical studies using R software, about project duration factors.
+\item Development of Excel and VBA tool computing project times previsions.
+\end{itemize}}
+
+%--------------------
+\section{Skills}
+%--------------------
+\subsection{Programming}
+\cvitem{Languages}{Ruby, Scala, Java, PHP, Javascript, C\texttt{++}, R, \LaTeX, CSS}
+\cvitem{Frameworks}{Rails, Symfony2, Backbone.js, jQuery}
+\cvitem{Data}{SQL, XML \& XSD \& XSLT, Redis}
+\cvitem{Tools}{Git, Maven, Amazon Web Services}
+%--------------------
+\subsection{Languages}
+\cvlanguage{English}{\textbf{Good practice, technical and usual}}{TOEFL PBT : 557, TOEIC : 865}
+\cvlanguage{German}{\textbf{Professional use}}{}
+
+%------------------
+\section{Studies}
+%------------------
+\cventry{2010-2014}{Applied Mathematics \& Computer Science Master degree \newline Speciality: software engineering and operations research \newline \textnormal{Institut de Mathématiques Appliquées}}{Université Catholique de l'Ouest (Angers)}{}{}{}
+%------------------
+\cventry{2012-2013}{Semester abroad for computer science and statistics studies}{Bamberg (Germany)}{}{}{}
+
+%-------------------------------------
+\section{Additional information}
+%-------------------------------------
+\cvline{Since 2013}{Lead and singer in the band \emph{Etincelo}}
+%-------------------------------------
+\cvline{Community}{Animation, shows and musicals preparation, etc.}
+
+%-------------------
+\section{References}
+%-------------------
+\begin{tabular}{ p{\dimexpr 0.49\linewidth-2\tabcolsep}
+                 p{\dimexpr 0.16\linewidth-2\tabcolsep}
+                 p{\dimexpr 0.35\linewidth-2\tabcolsep} }
+  \hspace{0.7em} Nicolas \textsc{Dabbaghian}, \scriptsize{SPEAR and CapSens CEO} & 06.14.44.02.48 & nicolas.dabbaghian@spear.fr \\
+  \hspace{0.7em} Jorge \textsc{Mendoza}, \scriptsize{lecturer, Polytech'Tours} & 06.73.82.12.55 & jorge.mendoza@univ-tours.fr \\
+  %\hspace{0.7em} Christelle \textsc{Guéret}, \scriptsize{professeur, Université d’Angers} & 02.44.68.75.73 & christelle.jussien-gueret@univ-angers.fr \\
+  %\hspace{0.7em} Jacky \textsc{Giraudeau}, \scriptsize{ingénieur Valeo} & 06.19.52.62.53 & jacky.giraudeau@valeo.com \\
+\end{tabular}
+
+\end{document}
+%-------------
+% DOCUMENT END
+%-------------
