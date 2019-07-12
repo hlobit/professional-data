@@ -4,6 +4,15 @@
 \usepackage[hscale=0.85, vscale=0.86]{geometry}
 \usepackage{fontspec,xltxtra,xunicode}
 \usepackage{fontawesome}
+\usepackage{ifthen}
+
+\newcounter{myage}
+\setcounter{myage}{\the\year}
+\addtocounter{myage}{-1990}
+\ifthenelse{\the\month<08}{\addtocounter{myage}{-1}}{}
+\ifthenelse{\the\month=08}{
+  \ifthenelse{\the\day < 29}{\addtocounter{myage}{-1}}{}
+}{}
 
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -11,7 +20,7 @@
 % HEADER %
 %%%%%%%%%%
 \name{\Huge Hubert}{\Huge \textsc{Lobit}}
-\title{Software developer \newline \small Aged 28}
+\title{Software developer \newline \small Aged \themyage{}}
 \address{\faHome \space Avenue Éléonore, 52/2}{1150 Woluwé-Saint-Pierre}{\faGlobe \space French nationality\vspace{1em}}
 \phone[mobile]{+32 489 98 88 59}
 \email{hubert.lobit@gmail.com}
