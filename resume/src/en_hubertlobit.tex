@@ -7,15 +7,18 @@
 %\defaultfontfeatures{Path = /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/fontawesome/}
 \usepackage{fontawesome}
 \usepackage[skins]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{soul}
 
 \newtcbox{\mytag}{enhanced,nobeforeafter,tcbox raise base,boxrule=0.4pt,top=0mm,bottom=0mm,
   right=0mm,left=0mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}},
   colframe=black!10!white,coltext=black,colback=black!10!white}
 
-\newcommand{\fontselect}[2]{%
-  \fontseries{#1}\selectfont #2\fontseries{m}\selectfont}
+\newcommand{\hlc}[2][yellow]{{%
+  \colorlet{color}{#1}%
+  \sethlcolor{color}\hl{#2}}}
 \newcommand{\highlight}[1]{%
-  \fontselect{sbc}{#1}}
+  \hlc[cyan!10]{#1}}
 \renewcommand{\familydefault}{\sfdefault}
 
 %%%%%%%%%%
