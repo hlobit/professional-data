@@ -1,0 +1,79 @@
+\documentclass[12pt,a4paper]{moderncv}
+\moderncvtheme[red]{classic}
+
+\usepackage[hscale=0.85, vscale=0.84]{geometry}
+\usepackage{fontspec,xltxtra,xunicode}
+% To find the FontAwesome font on macOS if not installed:
+%\defaultfontfeatures{Path = /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/fontawesome/}
+\usepackage{fontawesome}
+\usepackage[skins]{tcolorbox}
+
+\newtcbox{\mytag}{enhanced,nobeforeafter,tcbox raise base,boxrule=0.4pt,top=0mm,bottom=0mm,
+  right=0mm,left=0mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}},
+  colframe=black!10!white,coltext=black,colback=black!10!white}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+%%%%%%%%%%
+% HEADER %
+%%%%%%%%%%
+\name{\Huge Noémi}{\Huge \textsc{Tilmanne}}
+\title{Avocate spécialisée en droit du travail\newline}
+\address{\faHome \space Vieux chemin de Nivelles 74}{1440 Braine-Le-Château}{\space}
+\phone[mobile]{+32 498 40 64 32}
+\email{noemi.tilmanne@gmail.com}
+%\photo[74pt][0pt]{img/portrait-sm.pdf}
+
+%%%%%%%%%%%%
+% DOCUMENT %
+%%%%%%%%%%%%
+\begin{document}
+\makecvtitle
+\vspace{-3.5em}
+
+%-------------------
+\section{Expérience}
+%-------------------
+\cventry{\textit{Depuis 2012}}{Avocate}{Claeys \& Engels (Auderghem)}{}{}{\begin{itemize}
+\item Conseils relatifs aux multiples aspects du droit du travail (durée du travail, rémunération, engagement, fin du contrat,…) au travers d'avis et d'analyses en français, anglais et néerlandais
+\item Rédaction et relecture de divers documents sociaux : règlements de travail, contrats de travail et avenants, conventions collectives de travail, polices, etc.
+\item Suivi de dossiers litigieux : échange de courriers avec le travailleur ou son conseil, négociation, rédaction de conventions de transaction
+\item  Gestion de dossiers contentieux : rédaction des conclusions et plaidoiries
+\item Dispense de différents séminaires destinés à des responsables RH, en particulier en matière de durée du travail
+\item Rédaction d'articles dans des revues juridiques
+\item Participation à de nombreuses formations sur les évolutions de la législation sociale
+\end{itemize}}
+\cventry{\textit{2017-2018}}{Mission au sein d'un département de ressources humaines}{Entreprise du secteur bancaire}{}{}{\begin{itemize}
+\item Détachement à raison de deux jours par semaine en vue d'apporter un soutien juridique pour toutes les questions liées aux ressources humaines
+\item Discussions avec des managers en vue de déterminer une solution adaptée aux problématiques sociales rencontrées dans leur équipe
+\end{itemize}}
+\vspace{0.5em}
+
+%------------------
+\section{Formation}
+%------------------
+\cventry{2018}{Certificat en gestion de projet}{ICHEC}{}{}{}
+\cventry{2010-2012}{Master en droit}{Université Catholique de Louvain}{}{\newline Avec un semestre à l'étranger à l'université de Wolverhampton (Royaume-Uni)}{}
+\cventry{2007–2010}{Baccalauréat en droit}{Facultés Universitaires Saint-Louis}{}{}{}
+
+%------------------
+\section{Langues}
+%------------------
+\cvlanguage{Français}{\textbf{Langue maternelle}}{}
+\cvlanguage{Anglais}{\textbf{Bonne maîtrise usuelle et technique}}{TOEFL iBT 2014 : \textbf{106}}
+\cvlanguage{Néerlandais}{\textbf{Bonne maîtrise usuelle et technique}}{}
+\cvlanguage{Italien}{\textbf{Notions}}{}
+
+%------------------------
+\section{Compétences informatiques}
+%------------------------
+\cvitem{Bureautique}{\mytag{Outlook} \mytag{Word} \mytag{Excel} \mytag{Powerpoint}}
+
+%----------------
+\section{Centres d'intérêts}
+%----------------
+\cvline{}{Musique, spécialement à travers le chant, la guitare et la flûte traversière}
+\cvline{}{Gestion d'un groupe de musiciens pour l'animation d'événements et week-ends de jeunes}
+\cvline{}{Pâtisserie}
+
+\end{document}
